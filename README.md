@@ -2,11 +2,6 @@
 ## Version
 - Ruby 2.7.1  
 - Rails 6.0.3.7  
-## Precautions
-User using Docker for Windows need to take this command.
-```
-$ git config --global core.autocrlf input
-```
 ## Step
 1. Clone this repository
 2. Take commands in this order
@@ -23,4 +18,9 @@ $ source env.sh
 $ rspec
 $ rubocop
 $ yarn
+```
+## Precautions
+User using Docker for Windows need to take this command.
+```
+$ git config --global core.autocrlf input
 ```
