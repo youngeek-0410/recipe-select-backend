@@ -1,7 +1,7 @@
-# Docker for Ruby on Rails 5.* 
+# Ruby on Rails 6.* by Docker
 ## Version
-- Ruby 2.5.*  
-- Rails 5.2.4  
+- Ruby 2.7.1  
+- Rails 6.0.3.7  
 ## Precautions
 User using Docker for Windows need to take this command.
 ```
@@ -17,3 +17,10 @@ $ rails db:create
 $ up
 ```
 5. You can access http://localhost:3000 
+## Options
+```
+$ source env.sh
+$ rspec
+$ rubocop
+$ yarn
+```
