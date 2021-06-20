@@ -19,8 +19,3 @@ $ rspec
 $ rubocop
 $ yarn
 ```
-## Precautions
-User using Docker for Windows need to take this command.
-```
-$ git config --global core.autocrlf input
-```
