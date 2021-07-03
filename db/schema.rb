@@ -34,10 +34,11 @@ ActiveRecord::Schema.define(version: 3) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "firebase_uid"
+    t.string "name", null: false
+    t.string "firebase_uid", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["firebase_uid"], name: "index_users_on_firebase_uid", unique: true
   end
 
   add_foreign_key "recipes", "users"
