@@ -1,7 +1,7 @@
 # ==============================================================================
 # env
 # ==============================================================================
-project_name='rails-google-auth'
+project_name='recipe-select-backend'
 alias docker-compose="docker-compose -p $project_name"
 alias build="docker-compose build"
 alias up="docker-compose up"
