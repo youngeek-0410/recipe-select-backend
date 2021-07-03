@@ -1,6 +1,7 @@
 # ==============================================================================
 # app - model - user
 # ==============================================================================
-class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
+class User < ApplicationRecord
+  validates :name, presence: true
+  validates :firebase_uid, presence: true, uniqueness: true
 end
