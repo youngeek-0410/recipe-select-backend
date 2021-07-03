@@ -1,6 +1,10 @@
 # ==============================================================================
-# db - seed
+# spec - factory - user
 # ==============================================================================
 
-# user
-User.create!(name: '市古空', firebase_uid: 'aMdBTulTlebVtJGj1O0V4cWLB2M2')
+FactoryBot.define do
+  factory :user do
+    name { 'hoge' }
+    firebase_uid { 'hoge' }
+  end
+end
