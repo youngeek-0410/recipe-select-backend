@@ -1,6 +1,6 @@
 # ==============================================================================
-# app - model - user
+# app - serializser - application
 # ==============================================================================
-class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
+class ApplicationSerializer
+  include JSONAPI::Serializer
 end

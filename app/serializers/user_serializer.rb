@@ -1,6 +1,6 @@
 # ==============================================================================
-# app - model - user
+# app - serializser - user
 # ==============================================================================
-class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
+class UserSerializer < ApplicationSerializer
+  attributes :name, :created_at
 end

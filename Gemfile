@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'jsonapi-serializer'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -34,8 +35,8 @@ group :development, :test do
   gem 'rubocop', '~> 1.14.0'
   gem 'rubocop-rails'
   # Rspec
-  gem 'rspec', '~> 2.1'
-  gem 'rspec-rails', '~> 1.0'
+  gem 'rspec-rails', '~> 5.0'
+  gem 'factory_bot_rails', '~> 6.2'
 end
 
 group :development do
